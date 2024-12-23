@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 150ms;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.menuTop{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 50px;
+    background-color: #252e3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*box-shadow: 1px 0px 5px #252e3d;*/
+}
+
+.menuTopRight,
+.menuTopInput,
+.menuTopLeft,
+.menuTopRight > a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: small;
+    text-decoration: none;
+}
+
+.menuTopRight{
+    gap: 30px;
+}
+
+/*estilos do input do menu*/
+.menuTopInput{
+    width: 40%;
+    position: relative;
+}
+
+.menuTopInput > input{
+    width: 80%;
+    height: 20px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    outline: none;
+    border-style: none;
+    background-color: #4b515c;
+    color: #fff;
+}
+
+.menuTopInput > i{
+    position: absolute;
+    left: 15px;
+}
+
+/*estilos do nome do usuário logado e do btn sair*/
+
+.menuTopLeft{
+    gap: 20px;
+}
+
+.menuTopLeftBtn{
+    position: relative;
+}
+
+.menuTopLeftBtn > button{
+    background-color: transparent;
+    border: 2px solid #fec600;
+    padding: 8px 25px;
+    color: #fff;
+}
+
+.menuTopLeftBtn > i{
+    position: absolute;
+    top: 14px;
+    right: 5px;
+}
+
+/*estilo do container*/
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+.menuLeft {
+    width: 20%;
+    background-color: #252e3d;
+    position: fixed; /* Fixa o elemento na tela */
+    top: 70px;          /* Alinha ao topo */
+    left: 0;         /* Alinha à esquerda */
+    height: 100%;    /* Ocupa toda a altura da tela */
+    overflow-y: auto; /* Adiciona rolagem vertical, se necessário */
+    color: white;    /* Cor do texto para contraste */
+    padding: 50px;   /* Espaçamento interno */
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon > i,
+.icon > p{
+    margin-bottom: 40px;
+}
+
+.icon > p{
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: #0055d2;
+}
+
+.menuRight{
+    width: 50%;
+    padding: 20px 30px;
+}
+
+.menuRightTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.menuRightTitle > a{
+    text-decoration: none;
+    color: #252e3d;
+}
+
+.menuRightTitle > a:hover{
+    color: #4b515c;
+}
+
+.curso{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #252e3d;
+    font-size: small;
+}
+
+.cursoCard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.cursoDetails{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cursoDetails.open {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.control > p{
+    cursor: pointer;
+}
+
+.control > p:hover{
+    color: #4b515c;
+}
+
+.cursoTitle{
+    width: 200px;
+    font-size: 1.2em;
+}
+
+.barraConclusao{
+    width: 50%;
+    height: 30px;
+    background: #fff;
+    border-radius: 8px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background: linear-gradient(to right, #0055d2 15.75%, transparent 31.25%);
+    border: 1px solid #fff;
+}
+
+.btnAcessarContainer > button{
+    border-style: none;
+    background-color: #33cc66;
+    width: 100px;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnAcessarContainer > button:hover{
+    background-color: #29af55;
+}
+
+summary{
+    width: 100px;
+}
+
+.detailsControl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    color: #252e3d;
+}
+
+/* Estilos para o pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#slideContainer img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Para devs */
+
+table,
+th,
+td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    background-color: #4b515c;
+    color: #fff;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #252e3d;
+}
+
+.devsTitle{
+    font-size: 30px;
+}
+
+.aulasTitle{
+    display: flex;
+    align-items: center;
+}
+
+.aulasTitle > p{
+    margin: 5px;
+}
+
+.devsBtn{
+    color: #fec600;
+}
+
+.devsBtn:hover{
+    color: #0055d2;
+}
+
+/*Modal de natal*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Estilo para o modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Estilo para o modal */
+.modal {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+
+    /* Animação de entrada */
+    transform: scale(0); /* Começa invisível */
+    opacity: 0;
+    animation: modalScaleIn 0.5s ease forwards; /* Aplica animação */
+}
+
+/* Botão de fechar */
+.modal button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal button:hover {
+    background: #e60000;
+}
+
+/* Estilo para a imagem */
+.modal img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.modal > p{
+    margin-bottom: 20px;
+}
+
+/* Animação usando @keyframes */
+@keyframes modalScaleIn {
+    0% {
+        transform: scale(0); /* Tamanho inicial */
+        opacity: 0; /* Invisível no início */
+    }
+    100% {
+        transform: scale(1); /* Tamanho final */
+        opacity: 1; /* Totalmente visível */
+    }
+}
+
+.info{
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    width: 20px;
+    height: 20px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #33cc66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    box-shadow: 1px 1px 5px #252e3d;
+    cursor: pointer;
+}
+
+.info:hover{
+    background-color: #29af55;
+}

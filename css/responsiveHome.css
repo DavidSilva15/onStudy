@@ -1,0 +1,6 @@
+@media screen and (max-width: 1124px) {
+    .curso,
+    .cursoDetails{
+        width: 100%;
+    }
+}
