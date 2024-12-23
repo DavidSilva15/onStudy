@@ -1028,7 +1028,7 @@ function abrirPopup(index) {
 let inicioBtn = document.querySelectorAll('.inicio');
 inicioBtn.forEach((btn)=>{
     btn.addEventListener('click', ()=>{
-        window.location.href = '../home.html'
+        window.location.href = '../index.html'
     });
 });
 
