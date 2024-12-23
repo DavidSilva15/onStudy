@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento Pessoal (Beta)</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" href="../img/onstudy.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/responsiveHome.css">
+    <link rel="stylesheet" href="../css/instrucoesModal.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+
+<body>
+    <div class="menuTop">
+        <div class="logo">
+            <img src="../img/logo.png" alt="" width="40px">
+        </div>
+        <div class="menuTopRight">
+            <a href="">Plano de carreira</a>
+            <a href="">Categorias</a>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="menuTopInput">
+            <i class="fas fa-search"></i>
+            <input id="menuTopInput" type="text" placeholder="Pesquise seu curso">
+        </div>
+        <div class="menuTopLeft">
+            <p class="userName">David Silva</p>
+            <div class="menuTopLeftBtn">
+                <button>Sair</button>
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menuLeft">
+            <div class="icon">
+                <i class="fas fa-home"></i>
+                <p class="inicio">Inicio</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-display"></i>
+                <p>Meus cursos</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-book-open"></i>
+                <p>Apostilas</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-award"></i>
+                <p>Certificados</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-user"></i>
+                <p>Meus dados</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-bullseye"></i>
+                <p>Plano de carreira</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+                <p>Favoritos</p>
+            </div>
+        </div>
+        <div class="menuRight">
+            <div class="menuRightTitle">
+                <a href="../home.html">Meus cursos</a>
+                <a href="#"> > Dep. Pessoal</a>
+            </div>
+
+            <!--Duplique caso queira inserir um card de curso com as respectivas aulas-->
+            <div class="cursoCard">
+                <!--Elementos criados dinâmicamente aqui-->
+                <div class="curso">
+                    <i class="fas fa-id-card" style="font-size: 20px; color: #fff; margin-right: 10px; margin-left: 10px;"></i>
+                    <p class="cursoTitle">Departamento pessoal</p>
+                    <div class="barraConclusao">
+                        <p style="font-weight: 600;">31.25%</p>
+                    </div>
+                    <div class="btnAcessarContainer">
+                        <button class="btnAcessar">Aulas</button>
+                    </div>
+                </div>
+                <div class="cursoDetails" style="display: none;">
+                    <!--Bloco de aula caso queira adicionar mais aulas ao curso específico-->
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 6
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 7
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 8
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 9
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 10
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 11
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 12
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 13
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 14
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 15
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary style="cursor: pointer; font-size: 20px; color: #252e3d; font-weight: 600;">Aula 16
+                        </summary>
+                        <div class="detailsControl">
+                            <div class="cursoPlay control">
+                                <i class="fas fa-play"></i>
+                                <p id="tituloAula" class="depPessoal-aula">Aula teórica</p>
+                            </div>
+                            <div class="cursoKeyboard control">
+                                <i class="fas fa-keyboard"></i>
+                                <p class="atividade-pratica depPessoal-atv">Atividade prática</p>
+                            </div>
+                            <div class="cursoAvaliacao control">
+                                <i class="fas fa-file-alt"></i>
+                                <p class="depPessoal-avaliacao">Avaliação final -
+                                <p style="color: red;">OBS: Nota mínima 70%</p>
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+            
+                </div>
+            </div>
+        </div>
+        <div class="info" id="info">
+            <img src="https://icones.pro/wp-content/uploads/2021/05/icone-de-lettre-d-information-i-grise.png" alt="" width="40px">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal" style="display: none;">
+        <div class="modal">
+            <!-- Slides de imagens -->
+            <div class="slide active">
+                <img src="../img/tuto1.png" alt="Imagem 1">
+                <p class="step-text"><strong>Passo 1:</strong> Vamos aprender a como realizar a aula no portal OnStudy</p>
+            </div>
+            <div class="slide">
+                <img src="../img/tuto2.png" alt="Imagem 2">
+                <p class="step-text"><strong>Passo 2:</strong> Clique em <strong><i>Aulas</i></strong> para ter acesso a lista de aulas disponíveis.</p>
+            </div>
+            <div class="slide">
+                <img src="../img/tuto3.png" alt="Imagem 3">
+                <p class="step-text"><strong>Passo 3:</strong> Após clicar em <strong><i>Aulas</i></strong>, clique sobre a aula que deseja fazer para ter acesso as etapas da aula.</p>
+            </div>
+            <div class="slide">
+                <img src="../img/tuto4.png" alt="Imagem 4">
+                <p class="step-text"><strong>Passo 4:</strong> Clique em <strong><i>Aula teórica</i></strong> para acessar a vídeo-aula, logo após, clique em <strong><i>Atividade prática</i></strong> para ter acesos ao mão na massa, e por fim, clique em <strong><i>Avaliação final</i></strong> para responder a avaliação da aula.</p>
+            </div>
+            <div class="slide">
+                <img src="../img/tuto5.png" alt="Imagem 5">
+                <p class="step-text"><strong>Passo 5:</strong> Durante a avaliação, você pode marcar as respostas e remarcar caso seja necessário, que não será contabilizado como respondida.</p>
+            </div>
+            <div class="slide">
+                <img src="../img/tuto6.png" alt="Imagem 6">
+                <p class="step-text"><strong>Passo 6:</strong> Ao marcar todas as questões, clique sobre o botão <strong><i>Finalizar avaliação</i></strong>.</p>
+            </div>
+            <div class="slide">
+                <img src="../img/tuto7.png" alt="Imagem 7">
+                <p class="step-text"><strong>Passo 7:</strong> Caso tenha tirado uma nota inferior a 70%, clique sobre <strong><i>Tentar novamente</i></strong> ou caso queira verificar as quesões quee errou e acertou clique sobre <strong><i>Verificar alternativas</i></strong>.</p>
+            </div>
+            <div class="slide">
+                <img src="../img/tuto8.png" alt="Imagem 8">
+                <p class="step-text"><strong>Passo 8:</strong> As alternativas acertadas ficarão apenas verde enquanto que as alternativas que errou ficarão em vermelho com a questão correta em verde.</p>
+            </div>
+            <!-- Botões de navegação -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+            <!-- Botão de fechar -->
+            <button id="closeModal">Concluir tutorial</button>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script type="module" src="./dep-pessoal.js"></script>
+    <script src="../script/infoModal.js"></script>
+</body>
+
+</html>
