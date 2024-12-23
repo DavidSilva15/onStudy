@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Devs (Beta)</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon" href="./img/onstudy.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/responsiveHome.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+
+<body>
+    <div class="menuTop">
+        <div class="logo">
+            <img src="./img/logo.png" alt="" width="40px">
+        </div>
+        <div class="menuTopRight">
+            <a href="">Plano de carreira</a>
+            <a href="">Categorias</a>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="menuTopInput">
+            <i class="fas fa-search"></i>
+            <input id="menuTopInput" type="text" placeholder="Pesquise seu curso">
+        </div>
+        <div class="menuTopLeft">
+            <p class="userName">David Silva</p>
+            <div class="menuTopLeftBtn">
+                <button>Sair</button>
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menuLeft">
+            <div class="icon">
+                <i class="fas fa-home"></i>
+                <p class="inicio">Inicio</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-display"></i>
+                <p>Meus cursos</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-book-open"></i>
+                <p>Apostilas</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-award"></i>
+                <p>Certificados</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-user"></i>
+                <p>Meus dados</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-bullseye"></i>
+                <p>Plano de carreira</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+                <p>Favoritos</p>
+            </div>
+            <div class="icon devsBtn">
+                <i class="fas fa-code"></i>
+                <p>Para devs</p>
+            </div>
+        </div>
+
+        <div class="menuRight">
+            <div class="menuRightTitle">
+                <i style="color: #252e3d;" class="fas fa-code"></i>
+                <a href="">Para devs</a>
+            </div>
+            <div class="estatisticas">
+                <p style="font-weight: 700; padding: 10px 0px;">Cursos disponíveis</p>
+                <div class="cursosContainer">
+                    <table class="cursosTable">
+                        <tr>
+                            <th>Curso</th>
+                            <th>Aulas disponíveis</th>
+                        </tr>
+                        <tr>
+                            <td class="aulasTitle">
+                                <i class="fas fa-desktop" style="font-size: 20px; color: #fff; margin-right: 10px; margin-left: 10px;"></i>
+                                <p>Introdução a informática</p>
+                            </td>
+                            <td class="numAulas">/16</td>
+                        </tr>
+
+                        <tr>
+                            <td class="aulasTitle">
+                                <i class="fab fa-windows" style="font-size: 20px; color: #fff; margin-right: 10px; margin-left: 10px;"></i>
+                                <p>Windows 11</p>
+                            </td>
+                            <td class="numAulas">/16</td>
+                        </tr>
+
+                        <tr>
+                            <td class="aulasTitle">
+                                <i class="fas fa-file-word" style="font-size: 20px; color: #fff; margin-right: 10px; margin-left: 10px;"></i>
+                                <p>Word 2021</p>
+                            </td>
+                            <td class="numAulas">/16</td>
+                        </tr>
+
+                        <tr>
+                            <td class="aulasTitle">
+                                <i class="fas fa-file-excel" style="font-size: 20px; color: #fff; margin-right: 10px; margin-left: 10px;"></i>
+                                <p>Excel 2021</p>
+                            </td>
+                            <td class="numAulas">/16</td>
+                        </tr>
+
+                        <tr>
+                            <td class="aulasTitle">
+                                <i class="fas fa-id-card" style="font-size: 14px; color: #fff; margin-right: 10px; margin-left: 10px;"></i>
+                                <p>Departamento Pessoal</p>
+                            </td>
+                            <td class="numAulas">/16</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!--Scripts-->
+    <script type="module" src="./home.js"></script>
+    <script type="module" src="./intro/intro.js"></script>
+    <script type="module" src="./win/win.js"></script>
+    <script type="module" src="./word/word.js"></script>
+    <script type="module" src="./excel/excel.js"></script>
+    <script type="module" src="./dep-pessoal/dep-pessoal.js"></script>
+</body>
+
+</html>

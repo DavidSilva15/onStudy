@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Cursos (Beta)</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon" href="./img/onstudy.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/responsiveHome.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+
+<body>
+    <div class="menuTop">
+        <div class="logo">
+            <img src="./img/logo.png" alt="" width="40px">
+        </div>
+        <div class="menuTopRight">
+            <a href="">Plano de carreira</a>
+            <a href="">Categorias</a>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="menuTopInput">
+            <i class="fas fa-search"></i>
+            <input id="menuTopInput" type="text" placeholder="Pesquise seu curso">
+        </div>
+        <div class="menuTopLeft">
+            <p class="userName">David Silva</p>
+            <div class="menuTopLeftBtn">
+                <button>Sair</button>
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menuLeft">
+            <div class="icon">
+                <i class="fas fa-home"></i>
+                <p>Inicio</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-display"></i>
+                <p>Meus cursos</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-book-open"></i>
+                <p>Apostilas</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-award"></i>
+                <p>Certificados</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-user"></i>
+                <p>Meus dados</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-bullseye"></i>
+                <p>Plano de carreira</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+                <p>Favoritos</p>
+            </div>
+            <div class="icon devsBtn">
+                <i class="fas fa-code"></i>
+                <p>Para devs</p>
+            </div>
+        </div>
+        
+        <div class="menuRight">
+            <div class="menuRightTitle">
+                <a href="home.html">Meus cursos</a>
+            </div>
+
+            <div class="cursoCard">
+                <div class="curso">
+                    <p class="cursoTitle">Introdução a informática</p>
+                    <div class="barraConclusao">
+                        <p style="font-weight: 600;">31.25%</p>
+                    </div>
+                    <div class="btnAcessarContainer">
+                        <button class="btnAcessar">Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cursoCard">
+                <div class="curso">
+                    <p class="cursoTitle">Windows 11</p>
+                    <div class="barraConclusao">
+                        <p style="font-weight: 600;">31.25%</p>
+                    </div>
+                    <div class="btnAcessarContainer">
+                        <button class="btnAcessar">Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cursoCard">
+                <div class="curso">
+                    <p class="cursoTitle">Word 2021</p>
+                    <div class="barraConclusao">
+                        <p style="font-weight: 600;">31.25%</p>
+                    </div>
+                    <div class="btnAcessarContainer">
+                        <button class="btnAcessar">Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cursoCard">
+                <div class="curso">
+                    <p class="cursoTitle">Excel 2021</p>
+                    <div class="barraConclusao">
+                        <p style="font-weight: 600;">31.25%</p>
+                    </div>
+                    <div class="btnAcessarContainer">
+                        <button class="btnAcessar">Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cursoCard">
+                <div class="curso">
+                    <p class="cursoTitle">Assi. Departamento Pessoal</p>
+                    <div class="barraConclusao">
+                        <p style="font-weight: 600;">31.25%</p>
+                    </div>
+                    <div class="btnAcessarContainer">
+                        <button class="btnAcessar">Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <img src="./img/feliznatal.png" alt="Feliz Natal e Ano Novo">
+            <p>A <strong>OnStudy</strong> deseja a você e a sua família um Feliz Natal e um próspero Ano Novo!</p>
+            <button id="closeModal">Fechar</button>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script type="module" src="./home.js"></script>
+</body>
+
+</html>
